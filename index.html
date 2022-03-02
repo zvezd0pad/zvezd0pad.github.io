@@ -1,8 +1,277 @@
-<html>
-   <head>
-  <title> Звездопад </title>
-  </head>
-  <body bgcolor="black">
-     <h3> <p> <font color="#F0F8FF"> Звездопад</h3> 
-  </body>
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+<meta charset="UTF-8">
+<title>Звездопад</title>
+<style type="text/css">
+a{
+color: #000000;
+text-decoration: none;
+}
+html{
+background: #000000;
+min-height: 100%;
+font-family: Helvetica;
+display: flex;
+flex-direction: column;
+}
+body{
+margin: 0;
+padding: 0 15px;
+display: flex;
+flex-direction: column;
+flex: auto;
+}
+h1{
+margin-top: 0;
+}
+h1, p{
+color: 	#FF00FF;
+}
+img{
+border: 0;
+}
+.header{
+width: 100%;
+min-width: 460px;
+max-width: 960px;
+margin: 0 auto 30px;
+padding: 30px 0 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+box-sizing: border-box;
+}
+.logo{
+font-size: 1.5rem;
+color: 	#FF00FF;
+text-decoration: none;
+margin: 5px 0 0 5px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex: none;
+align-items: center;
+background: #000000;
+width: 130px;
+height: 50px;
+}
+.nav{
+margin: -5px 0 0 -5px;
+display: flex;
+flex-wrap: wrap;
+}
+.nav-item{
+background: #000000;
+width: 130px;
+height: 50px;
+font-size: 1.5rem;
+color: #FF00FF;
+text-decoration: none;
+display: flex;
+margin: 5px 0 0 5px;
+justify-content: center;
+align-items: center;
+}
+.sqr{
+height: 300px;
+width: 300px;
+background: #000000;
+}
+
+.main{
+width: 100%;
+min-width: 460px;
+max-width: 960px;
+margin: auto;
+flex: auto;
+box-sizing: border-box;
+}
+.box{
+font-size: 1.25rem;
+line-height: 1.5;
+margin: 0 0 40px -50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.box-base{
+margin-left: 50px;
+flex: 1 0 430px;
+}
+.box-side{
+margin-left: 50px;
+font: none;
+}
+.box-img{
+max-width: 100%;
+height: auto;
+}
+.content{
+margin-bottom: 30px;
+display: flex;
+flex-wrap: wrap;
+}
+.banners{
+flex: 1 1 200px;
+}
+.banner{
+background: #000000;
+width: 100%;
+min-width: 100px;
+min-height: 200px;
+font-size: 3rem;
+color:	#FF00FF;
+margin: 0 0 30px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.posts{
+margin: 0 0 30px 30px;
+flex: 1 1 200px;
+}
+.comments{
+margin: 0 0 30px 30px;
+flex: 1 1 200px;
+}
+.comment{
+display: flex;
+}
+.comment-side{
+padding-right: 20px;
+flex: none;
+}
+.comment-base{
+flex: auto;
+}
+.comment-avatar{
+background: #000000;
+width: 50px;
+height: 50px;
+}
+.footer{
+background: #000000;
+width: 100%;
+max-width: 960px;
+min-width: 460px;
+color: #FF00FF;
+margin: auto;
+padding: 15px;
+box-sizing: border-box;
+}
+
+@media screen and  (max-width: 800px) {
+.banners{
+margin-left: -30px;
+display: flex;
+flex-basis: 100%;
+}
+.banner{
+margin-left: 30px;
+}
+.posts{
+margin-left: 0;
+}
+}
+@media screen and  (max-width: 600px) {
+.content{
+display: block;
+}
+.banners{
+margin: 0;
+display: block;
+}
+.banner{
+margin-left: 0;
+}
+.posts{
+margin: 0;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo">
+Основной_раздел
+</a>
+<nav class="nav">
+<a href="#posts" class="nav-item">Звёзды</a>
+<a href="#comments" class="nav-item">Хор Сфер</a>
+<a href="#footer" class="nav-item">Подвал</a>
+</nav>
+
+</header>
+<main class="main">
+<div class="box">
+<div class="box-base">
+<h1>Звездопад</h1>
+<p>Место встречь и расстований</p>
+</div>
+<div class="box-side">
+<img class="sqr" src="gif2.gif" alt="он">
+
+</div>
+</div>
+</div>
+<div class="content">
+<div class="banners">
+<img class="banner" src="gif.gif" alt="она">
+</div>
+<div class="posts"  id="posts">
+<div class="post">
+<h1>Звезда 1</h1>
+<p>Описание.</p>
+</div>
+<div class="post">
+<h1>Звезда 2</h1>
+<p>Описание. </p>
+</div>
+<div class="post">
+<h1>Звезда 3</h1>
+<p>Описание.</p>
+</div>
+</div>
+<div class="comments"  id="comments">
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Слух 1</h1>
+<p>Описание.</p>
+</div>
+</div>
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Слух 2</h1>
+<p>Описание. </p>
+</div>
+</div>
+<div class="comment">
+<div class="comment-side">
+<div class="comment-avatar">
+
+</div>
+</div>
+<div class="comment-base">
+<h1 class="comment-title">Слух 3</h1>
+<p>Описание. </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer"  id="footer">
+Подвал, в котором хранятся упавшие звёзды
+</footer>
+</body>
 </html>
